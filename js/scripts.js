@@ -1,19 +1,18 @@
 //business logic
-function handleSubmission(userInput)
-{
-  let output = ""
+function handleSubmission(userInput) {
+  let output = "";
   const textArray1 = userInput.split("");
   console.log(textArray1);
   textArray1.forEach(function (element){
-    console.log(output)
+    console.log(output);
     
-    if (element.toLowerCase() === "a" || element.toLowerCase() === "e" || element.toLowerCase() === element.toLowerCase() === "i" || element.toLowerCase() === "o" || element.toLowerCase() === "u" ||  element.toLowerCase() ==="y" ) {    
+    if (element.toLowerCase() === "a" || element.toLowerCase() === "e" || element.toLowerCase() === element.toLowerCase() === "i" || element.toLowerCase() === "o" || element.toLowerCase() === "u" ||  element.toLowerCase() === "y") {    
       output += "-";
     } else {
       output += element.toString();
     }
   });
-  console.log(output)
+  console.log(output);
   return output;
 }
 
